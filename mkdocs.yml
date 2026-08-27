@@ -1,0 +1,77 @@
+site_name: 软件开发综合项目实训
+site_description: 航空管理系统项目化实训课程教程
+site_author: 武汉工商学院
+site_url: https://docs.raghub.cn
+
+repo_name: Zhhhaaa/software-project-training-docs
+repo_url: https://github.com/Zhhhaaa/software-project-training-docs
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: 切换至深色模式
+    - scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: 切换至浅色模式
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - 首页: index.md
+  - 课程开始:
+      - 课程说明: getting-started/course-overview.md
+      - 系统架构: getting-started/architecture.md
+      - 环境检查: getting-started/environment-checklist.md
+  - 课堂教程:
+      - 第 1 次课：项目启动: lessons/01-project-start.md
+      - 第 2 次课：登录闭环: lessons/02-login-flow.md
+      - 第 3 次课：登录练习: lessons/03-login-practice.md
+      - 第 4 次课：登录状态: lessons/04-session-auth.md
+      - 第 5 次课：修改密码: lessons/05-change-password.md
+      - 第 6 次课：用户查询与分页: lessons/06-user-search.md
+      - 第 7 次课：新增用户与头像: lessons/07-user-upload.md
+      - 第 8 次课：机票统计: lessons/08-ticket-statistics.md
+      - 第 9 次课：航班计划管理: lessons/09-flight-schedule.md
+      - 第 10 至 12 次课：选题开发: lessons/10-12-project-work.md
+  - 课程设计:
+      - 选题与开发要求: course-project/topics.md
+      - 提交规范: course-project/submission.md
+      - 答辩规范: course-project/defense.md
+  - 附录:
+      - 常见问题: appendix/troubleshooting.md
+      - AI 辅助开发规范: appendix/ai-guidelines.md
